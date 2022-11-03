@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    header{
+        width: 100vw;
+        height: 15vh;
+        background-color: #1e3346;
+        color: white;
+    }
+    header p{
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 15vh;
+    }
+    main>div{
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 10vh;
+    }
+    main{
+      margin-top:10px;
+      text-align:center; 
+    }
+
+</style>
+<body>
+    <header>
+        <p>歡迎光臨，這是會員頁</p>
+    </header>
+    <main>
+      <div>
+        {{name}}，歡迎成功登入系統
+      </div>
+      <div><a href="http://127.0.0.1:3000/signout">登出系統</a></div>
+    </main>
+</body>
+</html>

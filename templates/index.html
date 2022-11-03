@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    header{
+      height: 15vh;
+      background-color: #1e3346;
+      color: white;
+    }
+    header p{
+      font-size: 2.5rem;
+      text-align: center;
+      line-height: 15vh;
+    }
+    main{
+      text-align: center;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 10vh;
+    }
+    form{
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input{
+      margin-left: 10px;
+      line-height: 2;
+      width: 44vh;
+    }
+    button{
+      font-size: 1.5rem;
+      margin-top: 30px;
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+    }
+    hr{
+      border-color: #f6f6f6;
+      margin: 38px;
+    }
+  </style>
+  <body>
+    <header>
+      <p>歡迎光臨，請註冊登入系統</p>
+    </header>
+    <main>
+      <div>
+        <p>註冊帳號</p>
+        <form action="/signup" method="post">
+          <div>姓名<input type="text" name="name"/></div> 
+          <div>帳號<input type="text" name="username" /></div> 
+          <div>密碼<input type="text" name="password"/></div> 
+          <button>註冊</button>
+        </form>
+        <hr>
+        <p>登入系統</p>
+        <form action="/signin" method="post">
+          <div>帳號<input type="text" name="username" /></div>  
+          <div>密碼<input type="text"name="password"/></div> 
+          <button>登入</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
